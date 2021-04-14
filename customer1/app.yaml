@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: app
+  namespace: customer1
+  name: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: app
+    spec:
+      containers:
+      - image: surenmcode/my-simple-site:1.0
+        name: my-simple-site
+        resources: {}
+status: {}
