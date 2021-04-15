@@ -1,3 +1,3 @@
 # k8s-multi-tenant-ingress-demo
 
-![image](https://user-images.githubusercontent.com/3830633/114759537-31039a00-9d56-11eb-81c3-cee2b4370421.png)
+![image](https://user-images.githubusercontent.com/3830633/114821735-ea935700-9db8-11eb-8281-94bb4d80e95b.png)
