@@ -10,6 +10,13 @@ spec:
   rules:
   - http:
       paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: app-svc # name of your cw-app service
+            port:
+              number: 80
       - path: /app
         pathType: Prefix
         backend:

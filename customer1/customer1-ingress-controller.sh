@@ -1,5 +1,6 @@
 helm install customer1-nginx-ingress ingress-nginx/ingress-nginx \
     --namespace customer1 \
+    -f ingress-config.yaml \
     --set controller.replicaCount=2 \
     --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux \
     --set defaultBackend.nodeSelector."beta\.kubernetes\.io/os"=linux \
